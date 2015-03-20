@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Battleship » Mohammad Daraghmeh (Java) by Daraghmeh</title>
+    
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Battleship ~ Mohammad Daraghmeh (Java)</h1>
+        <h2>Welcome, this is a two week Java based project with the purpose of creating a Graphical User Interface (GUI) for the single player game of classical battleship</h2>
+      </div>
+    </header>
+<script>
+function RITPolicy() {
+    alert("Sorry :( As mentioned due to RIT Policy,uploading of code-source is forbidden!");
+}
+</script>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="overview-of-battleship" class="anchor" href="#overview-of-battleship"><span class="octicon octicon-link"></span></a>Overview of Battleship</h1>
+
+<p>This is a simplified single player version of the popular board game, Battleship. Battleship is in two words is a guessing game. Even though it is a game of simple rules (fire/miss) it was surprisingly a great learning experience. In a nutshell, the object of the game is to sink all of the ships on the board.</p>
+
+<h2>
+<a name="depth-in-view-of-battleship" class="anchor" href="#depth-in-view-of-battleship"><span class="octicon octicon-link"></span></a>In-Depth view of Battleship</h2>
+
+<p>As mentioned the objective of Battleship is to sink all of the ships on the board. With each click (turn), a player is given a grid and must decide where to fire on the grid. The result of this decision can either be that the spot fired on was a <strong>hit</strong> or <strong>miss</strong>. A hit being that part of a ship on the grid was hit or a miss being that water was at that spot. The standard setup of the game is for one player with unlimited turns and ammunition. When all ships on the board are sunk then the game is over and the player has won.</p>
+
+<h2>
+<a name="languageprogram-used" class="anchor" href="#languageprogram-used"><span class="octicon octicon-link"></span></a>Language/Program Used</h2>
+
+<p>This project was written in <strong>Java</strong> using the Eclipse platform of course from stretch. What was to be learned from creating this project was the following:</p>
+
+<ul>
+<li>To apply the Model-View-Control (MVC) design pattern to a specific application.</li>
+</ul><p><em>Note on MVC</em> : I believe MVC is the perfect harmony between the user interface and the model. For in this project my GUI and Model were differently separated yet worked hand in hand to accomplish a fully functional battleship game. However, it does not stop there for the same method of MVC is applied in the world of engineering in form of Model,User Interface, and Controller. Luckily for me I learned MVC in two courses at the same time (Object-Oriented Design and Digital System Design 2).</p>
+
+<ul>
+<li>Greater knowledge of object-oriented design and inheritance/interface design skills.</li>
+<li>Gain experience using Java's "Swing" GUI classes</li>
+<li>Gain experience with event driven programming</li>
+</ul><h2>
+<a name="project-design-approach" class="anchor" href="#project-design-approach"><span class="octicon octicon-link"></span></a>Project Design Approach</h2>
+
+<p>A separation of the model (game functionality) from the view and controller (GUI) as much as possible following the design pattern of MVC. When exploring my source code you will be able to see this clear separation (BattleShipGUI/BattleShipModel).</p>
+
+<p><img src="https://f.cloud.github.com/assets/4383833/966407/93111010-0547-11e3-9b7c-79c3108cddb0.png" alt="Line Break"></p>
+
+<h3>
+<a name="game-setuprules" class="anchor" href="#game-setuprules"><span class="octicon octicon-link"></span></a>Game Setup/Rules</h3>
+
+<p>~ One board with "X" of squares. Ex: (4 by 4)</p>
+
+<p>~ At least one ship on the board.</p>
+
+<h3>
+<a name="ship-rules---program-performs-a-check-for-all-rules-below" class="anchor" href="#ship-rules---program-performs-a-check-for-all-rules-below"><span class="octicon octicon-link"></span></a><strong>Ship Rules</strong>  ### Program performs a check for all rules below.</h3>
+
+<p>~ All orientation of the ships must be either horizontal or vertical (no diagonals). </p>
+
+<p>~ Ship locations must be completely within the boundaries of the specified board.</p>
+
+<p>~ No ships can overlap.</p>
+
+<h3>
+<a name="input-file-format" class="anchor" href="#input-file-format"><span class="octicon octicon-link"></span></a><strong>Input File Format</strong>
+</h3>
+
+<p>~ File must be in the format of a text file.</p>
+
+<h3>
+<a name="breakdown-of-format" class="anchor" href="#breakdown-of-format"><span class="octicon octicon-link"></span></a>Breakdown of Format</h3>
+
+<p><img src="https://f.cloud.github.com/assets/4383833/966146/16cd6980-053e-11e3-8dac-49fd7cf50be2.jpg" alt="Input Format"></p>
+
+<p>This example is a 6x6 board with the first ship a 2-section horizontal ship in the second row starting in the second position from the left. The second ship a 6-section ship that completely occupies the rightmost column of the board.</p>
+
+<h3>
+<a name="end-game" class="anchor" href="#end-game"><span class="octicon octicon-link"></span></a><strong>End Game</strong>
+</h3>
+
+<p>Player has successfully sunk all ships on the board and GUI has produced the message "XXX" (Fig. 7)</p>
+
+<h3>
+<a name="time-of-game" class="anchor" href="#time-of-game"><span class="octicon octicon-link"></span></a><strong>Time of Game</strong>
+</h3>
+
+<p>From 1 to 5 minutes.</p>
+
+<p><img src="https://f.cloud.github.com/assets/4383833/966407/93111010-0547-11e3-9b7c-79c3108cddb0.png" alt="Line Break"></p>
+        </section>
+
+        <aside id="sidebar"> <span class="inner" id="texts">Due to RIT Policy, This Repo is <strong>Private</strong></span>
+          <p>          
+          <p><a href="" onclick="RITPolicy()"class="button1"><small>.<br>
+          <br>
+          .
+          </small></a>
+          
+          <p><a href="" class="button">
+            <small>Download</small>
+            .zip file
+            </a>
+            <a href="" class="button">
+              <small>Download</small>
+              .tar.gz file
+            </a>          </p>
+          <p class="repo-owner">Created and Property of Mohammad M. <a href="https://github.com/Daraghmeh">Daraghmeh</a></p>
+        </aside>
+      </div>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-40773425-6");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
