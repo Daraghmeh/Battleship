@@ -1,4 +1,4 @@
-# Battleship ![enter image description here](https://github.com/Daraghmeh/daraghmeh.github.io/blob/master/img/icons/java-128.jpg?raw=true)
+# Battleship ![Battleship](https://github.com/Daraghmeh/daraghmeh.github.io/blob/master/img/icons/java-128.jpg?raw=true)
 ********************************************************************
 This was a two week Java based project with the purpose of creating a Graphical User Interface (GUI) for the popular/classic board game, battleship.
 
